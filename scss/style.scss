@@ -1,20 +1,60 @@
-/* 
-	style.css 
-	Written by Daigo Fujiwara (@DaigoFuji)
-	Date: PUBLISHEDDATE
-	use this: http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml#CSS_Style_Rules
-	also: http://csslint.net/ (Will hurt your feelings)
+/*
+* Homepage SCSS
 */
 
-/* normalize it */
-// @import "normalize";
+// Import foundation grid here so we can use media query variables.
+@import 'foundation/components/grid';
 
-/* foundation */
-@import "settings",
-		"foundation";
+.columns {
+}
 
-/* padding and margins */
-@import "padding-margin";
+.section {
+  @media #{$small-only} {
+    min-height: 400px; 
+    height: 400px; 
+  }
+  @media #{$medium-up} {
+    min-height: 700px; 
+  }
+}
 
-/* custom */
-@import "custom";
+.section-1 {
+  background: url(assets/img/bg.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+div#coming-soon{
+  background-color: red;
+  p {
+    color: yellow;
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+/*
+* Page-Wide Junk
+*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+  @media #{$medium-up} {
+  }
+  @media #{$large-up} {
+  }
+}
+
+//helper for font weight
+//Open+Sans:400,700,800|Raleway:400,200,700
+.font-light {
+  font-weight: 200;
+}
+.font-weight-normal {
+  font-weight: 400;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-heavy {
+  font-weight: 800;
+}

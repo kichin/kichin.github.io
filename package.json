@@ -3,10 +3,13 @@
   "version": "0.0.1",
   "devDependencies": {
     "grunt": "^0.4.5",
+    "bower": "^1.5.3",
+    "node": "^0.0.0",
     "grunt-concurrent": "^2.0.3",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-sass": "^1.0.0",
     "grunt-shell": "^1.1.2",
+    "grunt-exec": "^0.4.6",
     "node-sass": "^3.2.0"
   }
 }
