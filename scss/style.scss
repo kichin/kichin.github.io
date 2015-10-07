@@ -3,7 +3,6 @@
 */
 
 // Import foundation grid here so we can use media query variables.
-@import 'foundation/components/grid';
 
 .columns {
 }
@@ -19,8 +18,15 @@
 }
 
 .section-1 {
-  background: url(assets/img/bg.jpg) no-repeat 50% 50%;
+  background: url(../img/food.jpg) no-repeat 50% 50%;
   background-size: cover;
+
+  img#kichin-logo{
+    @media #{ $small-only } {
+      margin: auto;
+      background-color: rgba(255,255,255,0.8);
+    }
+  }
 }
 
 div#coming-soon{
