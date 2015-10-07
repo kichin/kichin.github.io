@@ -16,7 +16,14 @@
   background-size: cover;
 }
 
-
+div#coming-soon{
+  background-color: blue;
+  p {
+    color: yellow;
+    display: inline-block;
+    text-align: center;
+  }
+}
 
 /*
 * Page-Wide Junk

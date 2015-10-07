@@ -2,6 +2,17 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    exec: {
+      jsrv: 'jekyll serve --force_polling'
+    },
+
+    concurrent: {
+      tasks: ["exec:jsrv", "watch"],
+      options: {
+        logConcurrentOutput: true 
+      }
+    },
+
     sass: {
       options: {
         includePaths: ['bower_components/foundation/scss']
@@ -12,7 +23,7 @@ module.exports = function(grunt) {
         },
         files: {
           'css/style.css': 'scss/style.scss'
-        }        
+        }
       }
     },
 
@@ -26,9 +37,11 @@ module.exports = function(grunt) {
     }
   });
 
+  grunt.loadNpmTasks('grunt-exec');
+  grunt.loadNpmTasks('grunt-concurrent');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('build', ['sass']);
-  grunt.registerTask('default', ['build','watch']);
+  grunt.registerTask('default', ['build','concurrent']);
 }
