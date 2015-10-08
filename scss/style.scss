@@ -4,17 +4,44 @@
 * Homepage SCSS
 */
 
-$logo-offset: 100px;
+$logo-unit-sm: 140px;
+$logo-unit-md: 140px;
+$logo-unit-lg: 140px;
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  max-width: 100% !important;
+}
+
+.columns {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.section {
+  // code for all sections
+}
 
 .section-1 {
   background: url(../img/food.jpg) no-repeat 50% 50%;
   background-size: cover;
+  z-index: 0;
+  height: $logo-unit-sm*2;
 
   .white-overlay {
-    width: 90%;
     margin: auto;
     @media #{ $small-only } {
-      height: $logo-offset;
+      height: $logo-unit-sm;
+      width: 80%;
+    }
+    @media #{ $medium-only} {
+      height: $logo-unit-md;
+      width: 40%;
+    }
+    @media #{ $large-up} {
+      height: $logo-unit-lg;
+      width: 30%;
     }
     background-color: rgba(255,255,255,0.8);
   }
@@ -23,18 +50,33 @@ $logo-offset: 100px;
     display: block;
     margin: auto;
     position: relative;
-    top: -$logo-offset+($logo-offset/5);
+    @media #{ $small-only } {
+      height: $logo-unit-sm/1.5;
+    }
+    @media #{ $medium-only } {
+    }
+    @media #{ $large-only } {
+    }
   }
 
   div#coming-soon{
-    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
     width: 70%;
-    height: 90px;
-    margin: auto;
+    height: 50px;
     text-align: center;
+    background-color: rgba(0,0,0,1);
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
     p {
-      color: yellow;
+      color: white;
       font-size: 1.5rem;
     }
   }
+} // END OF SECTION 1
+
+div.section-2 {
+  z-index: 2;
+  position: relative;
+  background-color: blue;
 }

@@ -1,20 +1,47 @@
 /*
 * Homepage SCSS
 */
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  max-width: 100% !important;
+}
+
+.columns {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 .section-1 {
   background: url(../img/food.jpg) no-repeat 50% 50%;
   background-size: cover;
+  z-index: 0;
+  height: 280px;
 }
 
 .section-1 .white-overlay {
-  width: 90%;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
 @media only screen and (max-width: 40em) {
   .section-1 .white-overlay {
-    height: 100px;
+    height: 140px;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section-1 .white-overlay {
+    height: 140px;
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  .section-1 .white-overlay {
+    height: 140px;
+    width: 30%;
   }
 }
 
@@ -22,18 +49,32 @@
   display: block;
   margin: auto;
   position: relative;
-  top: -80px;
+}
+
+@media only screen and (max-width: 40em) {
+  .section-1 img.kichin-logo {
+    height: 93.3333333333px;
+  }
 }
 
 .section-1 div#coming-soon {
-  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
   width: 70%;
-  height: 90px;
-  margin: auto;
+  height: 50px;
   text-align: center;
+  background-color: black;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0;
 }
 
 .section-1 div#coming-soon p {
-  color: yellow;
+  color: white;
   font-size: 1.5rem;
+}
+
+div.section-2 {
+  z-index: 2;
+  position: relative;
+  background-color: blue;
 }
