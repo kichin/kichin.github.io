@@ -42,8 +42,9 @@
       display: block;
     }
     @media #{ $medium-only } {
-      width: 100%; 
-      margin-top: 50px;
+      min-width: 450px;
+      height: auto;
+      margin-top: 20px;
     }
     @media #{ $medium-up} {
     }

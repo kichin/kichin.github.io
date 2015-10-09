@@ -10,18 +10,20 @@
   }
 
   .white-overlay {
-    margin: auto;
     @media #{ $small-only } {
       height: $logo-unit-sm;
       width: 80%;
+      margin: auto;
     }
     @media #{ $medium-only} {
       height: $logo-unit-md;
       width: 40%;
+      margin-left: 8%;
     }
     @media #{ $large-up} {
       height: $logo-unit-lg;
       width: 30%;
+      margin-left: 15%;
     }
     background-color: rgba(255,255,255,0.6);
   }
@@ -35,9 +37,11 @@
     }
     @media #{ $medium-only } {
       height: $logo-unit-md/1.5;
+      margin-top: 15px;
     }
     @media #{ $large-only } {
       height: $logo-unit-lg/1.5;
+      margin-top: 15px;
     }
   }
 
