@@ -1,0 +1,77 @@
+.section-1 {
+  background: url(../img/food.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  z-index: 0;
+  height: $logo-unit-sm*2;
+
+  .section-1-inner { 
+    position: relative;
+    height: 100%;
+  }
+
+  .white-overlay {
+    margin: auto;
+    @media #{ $small-only } {
+      height: $logo-unit-sm;
+      width: 80%;
+    }
+    @media #{ $medium-only} {
+      height: $logo-unit-md;
+      width: 40%;
+    }
+    @media #{ $large-up} {
+      height: $logo-unit-lg;
+      width: 30%;
+    }
+    background-color: rgba(255,255,255,0.6);
+  }
+
+  img.kichin-logo {
+    display: block;
+    margin: auto;
+    position: relative;
+    @media #{ $small-only } {
+      height: $logo-unit-sm/1.5;
+    }
+    @media #{ $medium-only } {
+      height: $logo-unit-md/1.5;
+    }
+    @media #{ $large-only } {
+      height: $logo-unit-lg/1.5;
+    }
+  }
+
+  div#coming-soon{
+    z-index: 1;
+    width: 70%;
+    background-color: #464646;
+
+    // Center it
+    @media #{ $small-only } {
+      text-align: center;
+      height: 45px;
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+    @media #{ $medium-up } {
+      height: 75px;
+      text-align: right;
+      padding-right: 15px;
+    }
+    @media #{ $medium-up } {
+      right: 15px;
+      transform: rotate(-20deg);
+    }
+    bottom: 0;
+    //text
+    h3{
+      font-family: $body-font;
+      color: white;
+      font-weight: bold;
+      font-size: 1.8rem;
+
+    }
+  }
+} // END OF SECTION 1

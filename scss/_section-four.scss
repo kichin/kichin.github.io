@@ -1,0 +1,11 @@
+.section-4 {
+  border-top: solid $padding-size $light-red;
+  background-color: $dark-red;
+  min-height: 100px;
+  text-align: center;
+  h2 {
+    color: $white;
+    font-family: $body-font;
+    font-weight: bold;
+  }
+}

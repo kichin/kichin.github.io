@@ -10,7 +10,6 @@ author : Daigo Fujiwara
 analytics : UA-8418273-8
 year : 2015
 markdown : kramdown
-exclude :
-  - node_modules
+exclude : [node_modules, scss/vendor.scss, bower_components, .vagrant]
 host: 0.0.0.0
 port: 4000

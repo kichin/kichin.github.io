@@ -2,19 +2,79 @@
 layout: default
 title: Kichin
 ---
+<!--Section 1 -->
 <div class="row section section-1">
-  <div class="columns small-12 pvm">
-
+  <div class="columns small-12 ptl section-1-inner">
     <div class="white-overlay pvm">
       <img src="img/kichin_logo.svg" class="kichin-logo" alt="Kichin">
     </div>
-
-
-    <div id="coming-soon" class="pvl">
-      <p>coming soon</p>
+    <div id="coming-soon" class="">
+      <div class="coming-soon-text">
+        <h3>
+        coming soon
+        </h3>
+      </div>
     </div>
   </div>
 </div>
-<div class="row section section-2">
-  
+<!--Section 2 : SMALL-->
+<div class="row section section-2 show-for-small-only">
+  <div class="columns small-12">
+    <div class="kichin-description">
+      <p>healthy, delicious,</p>
+      <p>affordable korean cuisine</p>
+      <p>located in the heart of brooklyn, nyc</p>
+    </div>
+  </div>
+  <div class="columns small-12">
+    <div class="sign-up-form">
+      {% include signup-form.html %}
+    </div>
+  </div>
+</div>
+<!--Section 2 : MEDIUM UP -->
+<div class="row section section-2 show-for-medium-up">
+  <div class="columns medium-12">
+    <div class="kichin-description">
+      <p>healthy, delicious,</p>
+      <p>affordable korean cuisine</p>
+      <p>located in the heart of brooklyn, nyc</p>
+    </div>
+  </div>
+  <div class="columns medium-offset-6 medium-5 f-n">
+    <div class="sign-up-form">
+      {% include signup-form.html %}
+    </div>
+  </div>
+</div>
+<!--Section 3 -->
+<div class="row section section-3">
+  <div class="columns small-12">
+    <div class="located-at">
+      <img class="location-icon show-for-small-only" src="/img/located-at.png" alt="location icon">
+      <img class="location-icon show-for-medium-up" src="/img/located-at-large.png" alt="location icon">
+    </div>
+  </div>
+  <div class="columns small-12 medium-4 medium-offset-1">
+    <div class="address-container">
+      <ul class="address">
+        <li><strong>Kichin</strong></li>
+        <li>297 Broadway</li>
+        <li>Brooklyn, NY 11211</li>
+      </ul>
+    </div>
+  </div>
+  <div class="columns small-12 
+  medium-5 medium-offset-1 
+  large-6 large-offset-1 
+  end">
+    <iframe class="google-maps" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJI_jq7OBbwokRoze_NfoFX4E&key=AIzaSyBbaBfJ2GyNndv3tk-AqiYM17p0VTB_b3I" allowfullscreen></iframe>
+  </div>
+</div>
+<!--Section 4 -->
+<div class="row section section-4">
+  <div class="columns small-12">
+    <h2>Questions? Comments?</h2>
+    <h2>CONTACT@KICHIN.NYC</h2>
+  </div>
 </div>

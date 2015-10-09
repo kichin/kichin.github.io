@@ -4,9 +4,26 @@
 * Homepage SCSS
 */
 
+// colors
+$dark-red: #5E0500;
+$light-red: #EF4136;
+$white: #fff;
+
+// sizes
 $logo-unit-sm: 140px;
-$logo-unit-md: 140px;
-$logo-unit-lg: 140px;
+$logo-unit-md: 170px;
+$logo-unit-lg: 200px;
+$padding-size: 15px;
+
+// fonts
+$body-font: 'brandon-grotesque';
+$footer-font: 'brandon-grotesque';
+$wantupdates-font:'futura-pt-condensed';
+
+// utility classes
+.f-n {
+  float: none !important;
+}
 
 .row {
   margin-left: 0 !important;
@@ -20,63 +37,13 @@ $logo-unit-lg: 140px;
 }
 
 .section {
-  // code for all sections
+  min-height: $logo-unit-sm*2;
 }
 
-.section-1 {
-  background: url(../img/food.jpg) no-repeat 50% 50%;
-  background-size: cover;
-  z-index: 0;
-  height: $logo-unit-sm*2;
 
-  .white-overlay {
-    margin: auto;
-    @media #{ $small-only } {
-      height: $logo-unit-sm;
-      width: 80%;
-    }
-    @media #{ $medium-only} {
-      height: $logo-unit-md;
-      width: 40%;
-    }
-    @media #{ $large-up} {
-      height: $logo-unit-lg;
-      width: 30%;
-    }
-    background-color: rgba(255,255,255,0.8);
-  }
+// import the rest
 
-  img.kichin-logo {
-    display: block;
-    margin: auto;
-    position: relative;
-    @media #{ $small-only } {
-      height: $logo-unit-sm/1.5;
-    }
-    @media #{ $medium-only } {
-    }
-    @media #{ $large-only } {
-    }
-  }
-
-  div#coming-soon{
-    z-index: 1;
-    width: 70%;
-    height: 50px;
-    text-align: center;
-    background-color: rgba(0,0,0,1);
-    position: absolute;
-    margin: 0 auto;
-    bottom: 0;
-    p {
-      color: white;
-      font-size: 1.5rem;
-    }
-  }
-} // END OF SECTION 1
-
-div.section-2 {
-  z-index: 2;
-  position: relative;
-  background-color: blue;
-}
+@import "section-one", 
+        "section-two",
+        "section-three",
+        "section-four";

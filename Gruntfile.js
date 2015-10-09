@@ -1,9 +1,11 @@
 module.exports = function(grunt) {
+  require('time-grunt')(grunt);
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
     exec: {
-      jsrv: 'jekyll serve --force_polling'
+      jsrv: 'jekyll serve --force_polling',
+      build: 'jekyll build'
     },
 
     concurrent: {
@@ -19,8 +21,10 @@ module.exports = function(grunt) {
       },
       dist: {
         options: {
-          outputStyle: 'expanded'
+          outputStyle: 'expanded',
+          sourceMap: false
         },
+
         files: {
           'css/vendor.css': 'scss/vendor.scss',
           'css/style.css': 'scss/style.scss'
