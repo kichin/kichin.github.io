@@ -18,6 +18,9 @@ $medium-only: "#{$screen} and (min-width: 40.063em) and (max-width: 64em)";
 $large-up: "#{$screen} and (min-width: 64.063em)";
 $large-only: "#{$screen} and (min-width: 64.063em)) and (max-width: 90em)";
 
+$xlarge-up: "#{$screen} and (min-width: 90.063em)) and (max-width: 120em)";
+
+
 // We use this as cursors values for enabling the option of having custom cursors in the whole site's stylesheet
 $cursor-crosshair-value: crosshair;
 $cursor-default-value: default;

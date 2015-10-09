@@ -84,13 +84,13 @@
 
 .section-1 div#coming-soon {
   z-index: 1;
-  width: 70%;
-  background-color: #464646;
+  background-color: #272727;
   bottom: 0;
 }
 
 @media only screen and (max-width: 40em) {
   .section-1 div#coming-soon {
+    width: 70%;
     text-align: center;
     height: 45px;
     position: absolute;
@@ -103,23 +103,85 @@
 @media only screen and (min-width: 40.063em) {
   .section-1 div#coming-soon {
     height: 75px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: 8%;
+    margin-top: 6%;
     text-align: right;
     padding-right: 15px;
-  }
-}
-
-@media only screen and (min-width: 40.063em) {
-  .section-1 div#coming-soon {
+    transform: rotate(-10deg);
     right: 15px;
-    transform: rotate(-20deg);
   }
 }
 
-.section-1 div#coming-soon h3 {
+@media only screen and (min-width: 64.063em) {
+  .section-1 div#coming-soon {
+    height: 75px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: 8%;
+    margin-top: 3%;
+    text-align: right;
+    padding-right: 15px;
+    transform: rotate(-10deg);
+    right: 15px;
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  .section-1 div#coming-soon {
+    width: 20%;
+    text-align: center;
+    height: 45px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 40px;
+    transform: none;
+  }
+}
+
+.section-1 div#coming-soon .coming-soon-text {
+  position: relative;
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section-1 div#coming-soon .coming-soon-text {
+    bottom: 48%;
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  .section-1 div#coming-soon .coming-soon-text {
+    bottom: 57%;
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  .section-1 div#coming-soon .coming-soon-text {
+    transform: none;
+    bottom: 0%;
+  }
+}
+
+.section-1 div#coming-soon .coming-soon-text h3 {
   font-family: "brandon-grotesque";
   color: white;
   font-weight: bold;
   font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .section-1 div#coming-soon .coming-soon-text h3 {
+    transform: rotate(10deg);
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  .section-1 div#coming-soon .coming-soon-text h3 {
+    transform: none;
+  }
 }
 
 .section-2 {
@@ -156,6 +218,12 @@
   }
 }
 
+@media only screen and (min-width: 64.063em) {
+  .section-2 .kichin-description {
+    padding-left: 90px;
+  }
+}
+
 .section-2 .kichin-description p {
   font-family: "brandon-grotesque";
   color: black;
@@ -179,7 +247,7 @@
 
 @media only screen and (max-width: 40em) {
   .section-2 .sign-up-form {
-    width: 90%;
+    width: 80%;
     background-color: #5E0500;
     margin: auto;
     padding-top: 30px;
@@ -204,7 +272,8 @@
 
 @media only screen and (min-width: 40.063em) {
   .section-2 #want-updates {
-    font-size: 3em;
+    font-size: 2.5em;
+    margin-bottom: 20px;
   }
 }
 
@@ -214,22 +283,30 @@
   border-radius: 3px;
 }
 
-.section-2 #mc_embed_signup p {
-  line-height: 12px;
-  font-size: 1.4em;
-  font-family: "brandon-grotesque";
-  color: #fff;
+@media only screen and (max-width: 40em) {
+  .section-2 #mc_embed_signup p {
+    line-height: 16px;
+    font-size: 1.2em;
+    font-family: "brandon-grotesque";
+    color: #fff;
+  }
 }
 
 @media only screen and (min-width: 40.063em) {
   .section-2 #mc_embed_signup {
     padding-bottom: 20px;
   }
+  .section-2 #mc_embed_signup p {
+    line-height: 16px;
+    font-size: 2em;
+    font-family: "brandon-grotesque";
+    color: #fff;
+  }
 }
 
 @media only screen and (min-width: 64.063em) {
   .section-2 #mc_embed_signup {
-    padding-bottom: 25px;
+    padding-bottom: 35px;
   }
 }
 
@@ -244,8 +321,10 @@
   top: 5px;
 }
 
-.section-2 input#mc-embedded-subscribe {
-  color: #5E0500;
+@media only screen and (max-width: 40em) {
+  .section-2 input.email {
+    width: 20% !important;
+  }
 }
 
 .section-2 input.email, .section-2 input#mc-embedded-subscribe, .section-2 .ib {
@@ -278,6 +357,7 @@
 
 @media only screen and (min-width: 40.063em) {
   .section-3 .located-at {
+    margin-top: 40px;
     margin-bottom: 40px;
   }
 }
