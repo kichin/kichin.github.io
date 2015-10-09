@@ -3,6 +3,9 @@
   background-size: cover;
   z-index: 0;
   height: $logo-unit-sm*2;
+  @media #{ $xlarge-up } {
+    height: $logo-unit-md*2;
+  }
 
   .section-1-inner { 
     position: relative;
